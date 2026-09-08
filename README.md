@@ -1,87 +1,203 @@
 # System Dynamics Models — Arya Kia
 
-**A public showcase of System Dynamics models I have built or am currently developing.**
+**A curated public portfolio of System Dynamics models I have built or am currently developing across social systems, electricity, water, desalination, and energy policy.**
 
-**Repository type:** Public project showcase  
-**Focus:** System Dynamics · policy analysis · simulation · social systems · infrastructure · energy  
-**Working model files:** Maintained separately and shared selectively
-
----
-
-## Overview
-
-This repository is a portfolio-level view of my System Dynamics modeling work. It is intentionally not a dump of source models or unpublished research files. Instead, it documents the problems I have modeled, the research context, and the progression of my work across social, infrastructure, energy, and policy systems.
-
-## Models
-
-### Chain of Happiness
-
-A System Dynamics research project examining cooperation, helping behavior, resource exchange, and the dynamics of a digital social-impact platform.
-
-- Presented at the **2026 International System Dynamics Conference (ISDC)** in Delft.
-- Connected to the development of the public **Chain of Happiness** platform.
-- Focuses on the feedback structures that influence participation, helping, matching, and growth in a social-support system.
-
-**Project showcase:** [chain-of-happiness-showcase](https://github.com/Aryakia/chain-of-happiness-showcase)
+| | |
+|---|---|
+| **Repository type** | Public model portfolio |
+| **Focus** | System Dynamics · simulation · policy analysis · energy · water · social systems |
+| **Role** | Researcher and model developer |
+| **Model files** | Maintained separately and shared selectively |
+| **Public disclosure** | Research questions, model boundaries, horizons, major stocks/feedbacks, scenarios, and outputs—without unpublished equations or parameters |
 
 ---
 
-### Blackout
+## Portfolio overview
 
-A System Dynamics model developed as part of my broader work on dynamic systems and policy analysis.
+My modeling work focuses on systems where outcomes emerge from **feedback, accumulation, delay, nonlinearity, infrastructure lifetimes, institutional response, and policy adaptation**.
 
-**Status:** Model built · public technical summary to be added.
+The purpose of this repository is to show the **problems I model and how I structure them**, not to publish raw working models, calibration files, confidential datasets, or unpublished model logic.
+
+## Model portfolio
+
+### 1. Chain of Happiness
+
+**Domain:** social systems · cooperation · digital platforms  
+**Status:** model built · presented at ISDC 2026
+
+A System Dynamics research project examining how participation, helping behavior, resource availability, matching success, trust, and platform growth interact in a digital social-support system.
+
+The model explores reinforcing and balancing feedback such as:
+
+- successful help → trust / visibility → participation → more potential matches
+- growth → congestion / unmatched requests → lower perceived usefulness → weaker participation
+- resource availability ↔ matching success ↔ contribution incentives
+
+The research was presented at the **2026 International System Dynamics Conference in Delft** and is connected to the development of the live Chain of Happiness platform.
+
+**Project showcase:** https://github.com/Aryakia/chain-of-happiness-showcase  
+**Live platform:** https://chainofhappiness.com
 
 ---
 
-### DWD
+### 2. Blackout — *Chasing the Light*
 
-A System Dynamics model developed as part of my research and modeling portfolio.
+**Working title:** *Chasing the Light: A System Dynamics Assessment of the Structural Drivers Behind Iran's Blackout Gap*  
+**Domain:** electricity systems · reliability · energy policy  
+**Historical calibration period:** **1985–2024**  
+**Projection horizon:** through **2035**
 
-**Status:** Model built · public technical summary to be added.
+Blackout studies the paradox of substantial installed generation capacity and energy resources coexisting with a widening electricity supply–demand gap and recurring blackouts in Iran.
+
+Rather than treating shortages as a single-capacity problem, the model examines interconnected mechanisms involving:
+
+- electricity demand and production
+- available vs installed generation capacity
+- reliability and the emerging blackout gap
+- investment and capacity-expansion response
+- tariffs, subsidies, and financial pressure
+- fuel dependence and supply constraints
+- regional imbalance
+- political/policy response
+- renewable-policy incentives
+
+The working model endogenizes policy pressure around renewable deployment from system conditions such as emissions, reliability stress, and installed capacity. Scenario work considers policy levers including investment, tariff reform, demand management, and generation choices.
+
+**Public boundary:** detailed calibration data, equations, coefficients, and unpublished scenario results remain private until deliberately released.
 
 ---
 
-### Water Infrastructure Choices Under Climate and Population Stress
+### 3. DWD — Distributed Water Desalination
 
-A zonal simulation study of water-infrastructure choices in Iran under interacting climate, population, infrastructure, and policy pressures.
+**Domain:** water resilience · distributed infrastructure · solar-energy coupling  
+**Geographic structure:** zonal North / Center / South analysis
 
-The model compares alternative strategies over a **2015–2040** simulation horizon across three broad geographic zones and evaluates outcomes using measures including unmet demand, system cost, cost per effective cubic metre delivered, and resilience.
+DWD explores whether **distributed, often solar-powered desalination near demand centers** can improve water-system resilience compared with continued dependence on centralized supply expansion.
 
-Strategies examined include leakage reduction, centralized capacity expansion, distributed/local desalination, and adaptive infrastructure portfolios.
+The model is structured around questions such as:
 
-The work has been developed for the **2026 Winter Simulation Conference (WSC)**.
+- When does distributed desalination become attractive?
+- How do leakage and conveyance losses change the value of local supply?
+- How does desalination interact with grid stress and solar availability?
+- Can distributed supply reduce groundwater pressure?
+- What policy, regulation, cost, or adoption barriers slow deployment?
+- Under what conditions can decentralized supply avoid centralized investment lock-in?
+
+Public-safe model outputs include concepts such as:
+
+- installed distributed desalination capacity
+- distributed water volume
+- associated energy use
+- PV / renewable capacity interaction
+- levelized-cost comparisons
+- adoption/share of distributed supply
+- leakage exposure
+- groundwater pressure
+- resilience indicators
+- regional suitability across North / Center / South zones
+
+**Public boundary:** numerical coefficients, detailed cost assumptions, unpublished calibration, and working model files remain private.
 
 ---
 
-### Energy Policy Simulator for Iran — Planned Adaptation
+### 4. Water Infrastructure Choices Under Climate and Population Stress
+
+**Research title:** *Water Infrastructure Choices Under Climate and Population Stress: A Zonal Simulation Study of Iran*  
+**Domain:** water infrastructure · climate adaptation · policy analysis  
+**Simulation horizon:** **2015–2040**  
+**Research output:** Winter Simulation Conference 2026
+
+The model studies how infrastructure strategies perform when climate stress, population pressure, supply constraints, leakage, investment, construction delays, and policy response interact over time.
+
+#### Geographic zones
+
+- North / Northwest
+- Central Inland
+- Coastal South
+
+#### Scenario design
+
+The research compares business-as-usual with **nine combined climate/population scenarios** constructed from:
+
+- low / medium / high population pathways
+- normal / dry / severe climate conditions
+
+#### Strategies compared
+
+- leakage-first intervention
+- centralized capacity expansion
+- distributed/local desalination
+- adaptive infrastructure portfolios
+
+#### Evaluation metrics
+
+- unmet water demand
+- total system cost
+- cost per effective cubic metre delivered
+- resilience / recovery performance
+
+The project uses simulation to compare not only infrastructure capacity but also the timing, effectiveness, and resilience consequences of alternative investment pathways.
+
+---
+
+### 5. Energy Policy Simulator for Iran — Planned Adaptation
+
+**Domain:** energy policy · electricity · emissions · technology transition  
+**Status:** planned / in development
 
 A planned adaptation of the **Energy Policy Simulator (EPS)** framework to the Iranian energy system.
 
-The objective is to create a transparent policy-analysis environment for exploring how combinations of energy policies could affect Iran's electricity system, energy use, emissions, technology deployment, and transition pathways.
+The objective is to create a transparent policy-analysis environment for testing combinations of policies affecting areas such as:
 
-**Status:** Planned / in development.
+- electricity generation mix
+- energy demand and efficiency
+- renewable deployment
+- fossil-fuel use
+- emissions
+- technology adoption
+- energy security
+- policy-package interactions
+
+The emphasis will be on **policy combinations**, because the impact of one intervention can depend strongly on what other policies are implemented at the same time.
 
 ---
 
-## Modeling philosophy
+## How I use System Dynamics
 
-My modeling work uses System Dynamics to study problems where outcomes emerge from feedback, accumulation, delays, nonlinearity, policy response, and long time horizons. I am particularly interested in models that connect engineering systems to institutions, economics, behavior, and public policy.
+### Feedback
 
-Rather than treating a model as a static forecasting device, I use models as structured environments for asking **why a system behaves the way it does, what policies change that behavior, and where unintended consequences may arise**.
+I focus on reinforcing and balancing structures that can generate counterintuitive behavior—for example, capacity expansion that temporarily relieves a shortage but also stimulates demand or locks a system into expensive infrastructure pathways.
 
-## Areas of application
+### Stocks and flows
 
-- Water infrastructure and resilience
-- Energy systems and energy policy
-- Social-impact platforms and cooperation
-- Policy design and sensitivity analysis
-- Infrastructure investment
-- Complex adaptive and feedback-driven systems
+Physical capacity, knowledge, water availability, infrastructure, installed generation, trust, participation, and other accumulations are treated explicitly rather than as static variables.
 
-## Repository note
+### Delays
 
-This is a curated public showcase. Detailed model files, unpublished research, calibration work, data, and internal development materials may remain private until publication or deliberate release.
+Construction, policy implementation, learning, behavioral response, deterioration, and institutional adaptation can create significant delay between an intervention and its visible effect.
+
+### Policy learning
+
+The models are primarily tools for asking:
+
+- Why does the system behave this way?
+- Which feedbacks dominate under different conditions?
+- Which policies are robust across scenarios?
+- Where can an intervention create unintended consequences?
+
+## Application areas
+
+- electricity reliability and energy shortages
+- water infrastructure and climate resilience
+- distributed desalination
+- energy-transition policy
+- social-impact platforms and cooperation
+- infrastructure investment
+- policy design and sensitivity analysis
+
+## Public/private boundary
+
+This public portfolio intentionally excludes raw model files, unpublished equations, coefficients, calibration tables, proprietary or non-public datasets, credentials, private collaborator material, and internal research notes. Only research questions, public outputs, high-level model architecture, and deliberately released scope information are included.
 
 ## Author
 
