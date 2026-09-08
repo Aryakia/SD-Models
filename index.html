@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Arya Kia's public showcase of System Dynamics models across social systems, infrastructure, water, energy, and policy." />
+  <title>System Dynamics Models — Arya Kia</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2f;--text:#eef2ff;--muted:#aeb8d4;--line:#263252;--accent:#8ab4ff;--accent2:#9ce3c5}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top right,#17264a 0,#0b1020 36%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit} .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.hero{padding:92px 0 56px}.kicker{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);font-weight:700}.hero h1{font-size:clamp(2.6rem,7vw,5.8rem);line-height:.98;margin:.55rem 0 1.2rem;max-width:900px}.hero p{max-width:760px;color:var(--muted);font-size:1.12rem}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.pill{border:1px solid var(--line);background:#10172a;padding:8px 12px;border-radius:999px;color:#cfd7ee;font-size:.86rem}.section{padding:34px 0 66px}.section h2{font-size:1.7rem;margin:0 0 18px}.intro{max-width:850px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}.card{background:linear-gradient(180deg,rgba(18,26,47,.96),rgba(13,19,35,.96));border:1px solid var(--line);border-radius:20px;padding:26px;min-height:245px}.card h3{margin:.2rem 0 .6rem;font-size:1.35rem}.card p{color:var(--muted);margin:.5rem 0}.tag{display:inline-block;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);font-weight:700}.status{margin-top:18px;font-size:.86rem;color:#d7def2}.link{display:inline-block;margin-top:12px;text-decoration:none;color:var(--accent);font-weight:700}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}.principle{border-top:1px solid var(--line);padding-top:16px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:30px 0 54px;color:#8994b3;font-size:.9rem}@media(max-width:760px){.grid,.principles{grid-template-columns:1fr}.hero{padding-top:64px}.wrap{width:min(100% - 28px,1120px)}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">Public Model Portfolio</div>
+        <h1>System Dynamics Models</h1>
+        <p>A curated view of models I have built or am developing across social systems, infrastructure, water, energy, and policy. Working model files and unpublished research are maintained separately.</p>
+        <div class="meta"><span class="pill">System Dynamics</span><span class="pill">Simulation</span><span class="pill">Policy Analysis</span><span class="pill">Energy & Water</span><span class="pill">Arya Kia</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Models</h2>
+        <p class="intro">The purpose of this page is to show the range of systems I model and the questions behind them—not to publish private source models, calibration files, or unpublished data.</p>
+        <div class="grid">
+          <article class="card"><span class="tag">Social systems</span><h3>Chain of Happiness</h3><p>A System Dynamics research project on cooperation, helping behavior, resource exchange, and the dynamics of a digital social-impact platform.</p><p class="status">Presented at ISDC 2026 · Delft</p><a class="link" href="https://github.com/Aryakia/chain-of-happiness-showcase">View project showcase →</a></article>
+          <article class="card"><span class="tag">Dynamic systems</span><h3>Blackout</h3><p>A System Dynamics model in my broader modeling portfolio. The public technical summary will be added as the project documentation is prepared for release.</p><p class="status">Model built · public summary in preparation</p></article>
+          <article class="card"><span class="tag">System Dynamics</span><h3>DWD</h3><p>A System Dynamics model developed as part of my research and modeling work. Detailed public documentation will be added separately.</p><p class="status">Model built · public summary in preparation</p></article>
+          <article class="card"><span class="tag">Water infrastructure</span><h3>Water Infrastructure Choices</h3><p>A zonal simulation study of infrastructure strategy under climate and population stress in Iran, comparing leakage reduction, centralized expansion, distributed desalination, and adaptive portfolios.</p><p class="status">WSC 2026 research · 2015–2040 simulation horizon</p></article>
+          <article class="card"><span class="tag">Energy policy</span><h3>Energy Policy Simulator for Iran</h3><p>A planned adaptation of the Energy Policy Simulator framework to Iran, intended to explore electricity, energy use, emissions, technology deployment, and policy packages in a transparent scenario environment.</p><p class="status">Planned / in development</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>How I use models</h2>
+        <div class="principles">
+          <div class="principle"><strong>Feedback</strong><br/>I focus on reinforcing and balancing feedback structures that generate system behavior.</div>
+          <div class="principle"><strong>Accumulation & delay</strong><br/>Stocks, flows, infrastructure lifetimes, implementation delays, and path dependence are treated explicitly.</div>
+          <div class="principle"><strong>Policy learning</strong><br/>Models are used to test why systems behave as they do and where interventions may create unintended consequences.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Arya Kia · PhD researcher in Energy Systems Engineering · System Dynamics · Energy & Water Policy</div></footer>
+</body>
+</html>
