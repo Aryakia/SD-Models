@@ -2,6 +2,8 @@
 
 **A curated public portfolio of System Dynamics models I have built or am currently developing across social systems, electricity, water, desalination, and energy policy.**
 
+[Explore the model maturity and public-evidence map](docs/MODEL_STATUS_MAP.md)
+
 | | |
 |---|---|
 | **Repository type** | Public model portfolio |
